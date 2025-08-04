@@ -50,6 +50,11 @@ input{
 }
 #add-button {
     background-color: rgb(30, 30, 133);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 0 0 20%;
+
 }
 #add-button:hover{
      background-color: rgb(0, 0, 70);
@@ -58,6 +63,7 @@ input{
 }
 #delete-items{
     background-color: #e74c3c;
+    color: white;
     display: none;
 }
 #delete-items:hover{
@@ -76,8 +82,9 @@ li {
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 9px;
-     justify-content: space-between; 
-     align-items: center;
+    justify-content: space-between; 
+    align-items: center;
+    display: flex;
 }
 li.completed{
     text-decoration: line-through;
@@ -92,3 +99,16 @@ li button {
     cursor: pointer;
 }
 
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+}
+.input-container input {
+    flex-grow: 1;
+}
+.add-task-button {
+    flex: 0 0 20%;
+}
